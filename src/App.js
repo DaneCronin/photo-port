@@ -6,7 +6,6 @@ import ContactForm from './components/Contact';
 
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
 
   const [categories] = useState([
     {
@@ -19,6 +18,8 @@ function App() {
   ]); 
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [contactSelected, setContactSelected] = useState(false);
+
 
   return (
     <div>
